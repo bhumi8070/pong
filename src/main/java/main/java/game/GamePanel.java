@@ -280,10 +280,6 @@ public class GamePanel extends JPanel {
         isPlaying = playing;
     }
 
-    public int getBorderStrokeSize() {
-        return borderStrokeSize;
-    }
-
     public void exitEarly() {
         this.isExitEarly = true;
     }
