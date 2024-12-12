@@ -18,10 +18,6 @@ public class GamePanel extends JPanel {
     private boolean isExitEarly;
     private boolean activePlayer2Bot;
 
-    public GamePanel() {
-        this(true);
-    }
-
     public GamePanel(boolean isMultiplayer) {
         setSize(Config.SCREEN_RESOLUTION);
         setPreferredSize(Config.SCREEN_RESOLUTION);
@@ -278,10 +274,6 @@ public class GamePanel extends JPanel {
             });
         }
 
-    }
-
-    public boolean isPlaying() {
-        return isPlaying;
     }
 
     public void setPlaying(boolean playing) {

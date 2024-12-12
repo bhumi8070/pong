@@ -1,7 +1,5 @@
 package main.java.game;
 
-import java.awt.*;
-
 public class Player {
     private int score;
     private Paddle paddle;

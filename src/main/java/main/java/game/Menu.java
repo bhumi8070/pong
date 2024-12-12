@@ -5,14 +5,12 @@ import main.java.Resource;
 import java.awt.*;
 
 public class Menu {
-    private final int borderStrokeSize;
     private final Dimension gamePanelSize;
     private final Option[] options;
     private int currentOption;
 
     public Menu(GamePanel gamePanel) {
         gamePanelSize = gamePanel.getSize();
-        borderStrokeSize = gamePanel.getBorderStrokeSize();
         options = new Option[]{
                 new Option("Resume") {
                     @Override
@@ -61,10 +59,6 @@ public class Menu {
         int yMenu = (gamePanelSize.height - menuHeight) / 2;
         graphics2D.setColor(Color.LIGHT_GRAY);
         graphics2D.fillRoundRect(xMenu, yMenu, menuWidth, menuHeight, arcDiameter, arcDiameter);
-
-//        graphics2D.setColor(Color.DARK_GRAY);
-//        graphics2D.setStroke(new BasicStroke(borderStrokeSize));
-//        graphics2D.drawRoundRect(xMenu, yMenu, menuWidth, menuHeight, arcDiameter, arcDiameter);
 
         for (int i = 0; i < options.length; ++i) {
             if (i == currentOption) {
